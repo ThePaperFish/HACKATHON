@@ -5,7 +5,7 @@ def banner():
     
 def type_banner():
     a = """ Apartment Type A
-           - 2 bedrooms and equiped with kitchen and laundry
+           - 2 bedrooms and equipped with kitchen and laundry
            - Monthly rental is RM300 per room """
     b = """ Apartment Type B
            - 3 bedrooms including one master bedroom with attached bedroom
