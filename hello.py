@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 def banner(Type):
     if Type == 0:
         print('-----' *18)
@@ -6,7 +6,7 @@ def banner(Type):
         print('-----' *18)
 
 banner(0) # 0 is start
-=======
+
 def banner():
     print('-----' *18)
     print('\t' *3, "South City Plaza Apartment")
@@ -22,8 +22,8 @@ def type_banner():
            - Monthly rental is RM200 with normal room and additional 40% for master room """
     print(a, b, sep='\n')
 
-banner()
+banner(0)
 type_banner()
->>>>>>> bddb69d51d109eb5841c8961fcb4921fd95868c1
+
 number_a = int(input())
 number_b = int(input())
