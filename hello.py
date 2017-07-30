@@ -31,13 +31,19 @@ banner(2)
 M_option = input("Please select an option   :")
 
 if M_option.isnumeric():
+    
     M_option = int(M_option)
+    
+    if M_option == 1:
+        username = input("Please enter your username  : ")
+        password = input("Please enter your password  : ")
+
+    
 else:
+    
     if "help" in M_option:
         banner(4)
 
 
-username = input("Please enter your username  : ")
-password = input("Please enter your password  : ")
 
 
