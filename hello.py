@@ -25,5 +25,5 @@ def type_banner():
 banner(0)
 type_banner()
 
-number_a = int(input())
-number_b = int(input())
+Username = input()
+Password = input()
