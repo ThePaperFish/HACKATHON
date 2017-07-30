@@ -4,7 +4,6 @@ def banner(Type):
         print('-----' *18)
         print('\t' *3, "South City Plaza Apartment")
         print('-----' *18)
-        print('\n')
         
     if Type == 1:
         a = """ Apartment Type A
@@ -15,16 +14,30 @@ def banner(Type):
                - No kitchen and laundry facilities
                - Monthly rental is RM200 with normal room and additional 40% for master room """
         print(a, b, sep='\n')
-        print('\n')
 
     if Type == 2:
+        print("1:" , "Login ")
+        print("2:" , "Register ")
+    
+    if Type == 3:
         print ("Welcome!")
+
+    print()
         
 banner(0)
 banner(1)
+banner(2)
+
+M_option = input("Please select an option   :")
+
+if M_option.isnumeric():
+    M_option = int(M_option)
+else:
+    if "help" in M_option:
+        banner(4)
+
 
 username = input("Please enter your username  : ")
 password = input("Please enter your password  : ")
 
-if username.equals("user1") and password.equals("user1") :
-    banner(2)
+
