@@ -1,4 +1,4 @@
-def banner():
+def banner(type):
     print('-----' *18)
     print('\t' *3, "South City Plaza Apartment")
     print('-----' *18)
