@@ -10,7 +10,7 @@ def type_banner():
     b = """ Apartment Type B
            - 3 bedrooms including one master bedroom with attached bedroom
            - No kitchen and laundry facilities
-           - Monthly rental is RM200 with normal room and additional 40% for master room """
+           - Monthly rental is RM200 for normal room and RM280 for master room """
     print(a, b, sep='\n')
 
 banner()
