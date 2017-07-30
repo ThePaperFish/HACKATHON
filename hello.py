@@ -1,11 +1,12 @@
+from random import randint
 
-def banner(Type):
-    if Type == 0:
+def banner(Type,Data = ""):
+    if Type == "start":
         print('-----' *18)
         print('\t' *3, "South City Plaza Apartment")
         print('-----' *18)
         
-    if Type == 1:
+    if Type == "rooms":
         a = """ Apartment Type A
                - 2 bedrooms and equiped with kitchen and laundry
                - Monthly rental is RM300 per room """
@@ -15,20 +16,32 @@ def banner(Type):
                - Monthly rental is RM200 with normal room and additional 40% for master room """
         print(a, b, sep='\n')
 
-    if Type == 2:
+    if Type == "menu":
         print("1:" , "Login ")
         print("2:" , "Register ")
     
-    if Type == 3:
-        print ("Welcome!")
+    if Type == "Fuckoff":
+        print ("Welcome!",Data)
 
     print()
+
+def U_login(username,password):
+    if username == "" or password == "" :
         
-banner(0)
-banner(1)
-banner(2)
+        while randint(0,1000) != 100:
+            print("FUCK YOU", '\n')
+            
+    if username == "1" and password == "1" :
+        banner("Fuckoff",username)
+    
+        
+banner("start")
+banner("rooms")
+banner("menu")
 
 M_option = input("Please select an option   :")
+print()
+M_option = M_option.lower()
 
 if M_option.isnumeric():
     
@@ -37,7 +50,9 @@ if M_option.isnumeric():
     if M_option == 1:
         username = input("Please enter your username  : ")
         password = input("Please enter your password  : ")
+        print()
 
+        U_login(username,password)
     
 else:
     
